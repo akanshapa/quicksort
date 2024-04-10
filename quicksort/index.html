@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorting Visualizer</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   </head>
+<body>
+    <!-- <h1> QuickSort Visualizer </h1> -->
+    <div id="container">
+    </div>
+    <div class="swap-count">
+        <span> swaps = </span>
+        <span id="count">0</span>
+    </div>
+    <div class="description">
+        <h3>description </h3>
+    </div>
+    <script src="script.js"></script>
+    <hr>
+    <div>
+        <button id="reset" onclick="init()">Reset</button>
+        <button onclick="quick_sort()">Play</button>
+        <button onclick="stepByStep()">Step</button>
+    </div>
+    <audio id = "swap-sound" src="swap_sound.wav" ></audio>
+    <button id="night-mode-button"><i class="fa-solid fa-moon"></i></button>
+</body>
+</html>
